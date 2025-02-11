@@ -1,19 +1,13 @@
 "use strict";
-function Somar(numeroA, numeroB, numeroC) {
-    const somando = numeroC * numeroB + numeroA;
-    return somando;
+function multiplicar(numeroA, numeroB) {
+    return numeroA * numeroB;
 }
-let numeroA = 146;
-let numeroB = 53;
-let numeroC = 28;
-const resultadoSoma = Somar(numeroA, numeroB, numeroC);
-console.log(`O resultado da soma é ${resultadoSoma}.`);
-function Saudacao(diz, nome) {
-    const saudacao = diz;
-    const seuNome = nome;
-    return seuNome + saudacao;
+const resultadoMult = multiplicar(153, 77.5);
+console.log(resultadoMult);
+function saudacao(nome) {
+    return `Olá ${nome}`;
 }
-let seuNome = "Guilherme";
-let saudacao = "Olá :)";
-const dizSaudacao = Saudacao(seuNome, saudacao);
-console.log(`\n ${seuNome} diz ${saudacao}`);
+;
+const seuNome = "Guilherme";
+const saudacaoNome = saudacao(seuNome);
+console.log(saudacaoNome);
